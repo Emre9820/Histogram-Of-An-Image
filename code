@@ -1,0 +1,15 @@
+hips=imread("hi.png");
+figure, imshow(hips)
+figure
+subplot(1,2,1);
+
+%%
+imhist(hips)
+title('histogram using imhist')
+%%
+histogram=histogram(hips);
+subplot(1,2,2);
+bar(histogram,'b');
+title('histogram using , myhist ')
+axis([0 256 0 6000]);
+
